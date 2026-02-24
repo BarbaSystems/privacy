@@ -3,138 +3,194 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tab Fridge – Privacy Policy</title>
+  <meta name="robots" content="index,follow" />
+  <title>Privacy Policy — Tab Fridge</title>
+  <meta name="description" content="Privacy Policy for the Tab Fridge Chrome Extension." />
   <style>
+    :root {
+      --bg: #0b0f19;
+      --card: rgba(255,255,255,0.06);
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.72);
+      --border: rgba(255,255,255,0.14);
+      --link: #7aa2ff;
+    }
+    * { box-sizing: border-box; }
     body {
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      color: #0f172a;
-      background: #ffffff;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
       line-height: 1.55;
+      color: var(--text);
+      background: radial-gradient(1200px 600px at 20% 0%, rgba(122,162,255,0.25), transparent 50%),
+                  radial-gradient(900px 500px at 90% 20%, rgba(56,189,248,0.18), transparent 50%),
+                  var(--bg);
+    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 48px 18px;
     }
     header {
-      padding: 32px 20px;
-      border-bottom: 1px solid #e2e8f0;
-      background: #0b1220;
-      color: #e2e8f0;
+      padding: 22px 22px 18px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
     }
-    header h1 { margin: 0 0 8px; font-size: 22px; }
-    header p { margin: 0; color: #94a3b8; }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      letter-spacing: -0.02em;
+    }
+    .sub {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
     main {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 24px 20px 60px;
+      margin-top: 18px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 16px;
+      padding: 22px;
+      backdrop-filter: blur(10px);
     }
     h2 {
-      margin-top: 28px;
+      margin: 22px 0 10px;
       font-size: 18px;
-      border-bottom: 1px solid #e2e8f0;
-      padding-bottom: 8px;
+      letter-spacing: -0.01em;
     }
-    .note {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      padding: 12px 14px;
-      border-radius: 10px;
-    }
-    ul { padding-left: 18px; }
-    code {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-size: 0.95em;
+    h2:first-child { margin-top: 0; }
+    p, li { color: var(--text); }
+    ul { margin: 8px 0 0 18px; }
+    .muted { color: var(--muted); }
+    .box {
+      margin-top: 14px;
+      padding: 14px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(0,0,0,0.22);
     }
     footer {
-      border-top: 1px solid #e2e8f0;
-      padding-top: 16px;
-      margin-top: 28px;
-      color: #64748b;
-      font-size: 13px;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.95em;
+      background: rgba(255,255,255,0.08);
+      padding: 2px 6px;
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.12);
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <h1>Tab Fridge – Privacy Policy</h1>
-    <p>Effective date: <strong>2026-02-24</strong></p>
-  </header>
+  <div class="wrap">
+    <header>
+      <h1>Privacy Policy — Tab Fridge</h1>
+      <p class="sub">
+        Effective date:
+        <time datetime="2026-02-24">February 24, 2026</time>
+      </p>
+    </header>
 
-  <main>
-    <div class="note">
-      <strong>Summary:</strong> Tab Fridge stores your saved tabs and reminders locally on your device.
-      It does not send your data to any external servers, does not sell data, and does not use tracking or analytics.
-    </div>
+    <main>
+      <h2>1) Overview</h2>
+      <p>
+        “Tab Fridge” is a Chrome extension that helps you save (“freeze”) the current tab with an optional note
+        and a reminder time. When the reminder is due, the extension can notify you so you can reopen the tab at
+        the right moment. This Privacy Policy explains what information the extension processes and how it is handled.
+      </p>
 
-    <h2>1. What Tab Fridge does</h2>
-    <p>
-      Tab Fridge lets you save (“freeze”) the current browser tab with an optional note and a reminder time.
-      When the reminder is due, the extension can show a notification so you can reopen the tab.
-    </p>
+      <h2>2) Data the extension processes</h2>
+      <p>The extension processes only the minimum data needed to provide its features:</p>
+      <ul>
+        <li><strong>Tab details you choose to save:</strong> the tab URL and page title (used to identify the saved item).</li>
+        <li><strong>Content you provide:</strong> labels and notes you type in the extension UI.</li>
+        <li><strong>Optional selected text:</strong> if you enable “save selection”, the extension may store the text you highlighted on the page.</li>
+        <li><strong>Reminders:</strong> the reminder date/time you set and the saved tab URL to open when a reminder triggers.</li>
+      </ul>
 
-    <h2>2. Information the extension processes</h2>
-    <p>Tab Fridge processes only the information needed to provide its functionality. This may include:</p>
-    <ul>
-      <li><strong>Frozen tab details:</strong> tab URL and page title.</li>
-      <li><strong>User-provided content:</strong> labels and notes you type into the extension.</li>
-      <li><strong>Optional selected text:</strong> if you enable “save selection”, the extension may store the text you highlighted on the page.</li>
-      <li><strong>Reminder metadata:</strong> reminder date/time and item status (e.g., pending/due/opened).</li>
-    </ul>
+      <h2>3) Where your data is stored</h2>
+      <p>
+        All extension data is stored <strong>locally on your device</strong> using Chrome’s extension storage
+        (<code>chrome.storage.local</code>). The extension does <strong>not</strong> require you to create an account.
+      </p>
 
-    <h2>3. Where your data is stored</h2>
-    <p>
-      All data is stored <strong>locally on your device</strong> using <code>chrome.storage.local</code>.
-      Tab Fridge does <strong>not</strong> transmit your data to the developer or to any third-party servers.
-    </p>
+      <h2>4) Data sharing</h2>
+      <p>
+        The extension does <strong>not</strong> sell, rent, or share your extension data with third parties.
+        It does <strong>not</strong> send your saved tabs, notes, or reminders to a developer-controlled server.
+      </p>
 
-    <h2>4. Permissions and why they are needed</h2>
-    <ul>
-      <li><code>storage</code>: to save frozen items locally so they persist across sessions.</li>
-      <li><code>alarms</code>: to schedule reminders at the time you choose.</li>
-      <li><code>notifications</code>: to show reminders and quick actions (Open / Snooze).</li>
-      <li><code>activeTab</code>: to access the current tab details only when you click the extension.</li>
-      <li><code>scripting</code>: to read page title/URL and optional selected text only on your request.</li>
-    </ul>
-    <p>
-      Tab Fridge does not request any host permissions and does not automatically run on websites in the background.
-    </p>
+      <h2>5) What the extension does not collect</h2>
+      <p>The extension is not designed to collect:</p>
+      <ul>
+        <li>Passwords or authentication credentials</li>
+        <li>Payment or financial information</li>
+        <li>Health information</li>
+        <li>Personal communications (e.g., email, chat messages)</li>
+        <li>Precise location data</li>
+      </ul>
 
-    <h2>5. Data sharing</h2>
-    <p>
-      Tab Fridge does not share, sell, or rent your data to third parties.
-      The extension does not use analytics, advertising, or tracking services.
-    </p>
+      <h2>6) Permissions used</h2>
+      <p>The extension requests certain Chrome permissions to function:</p>
+      <ul>
+        <li><strong>Storage</strong> (to save frozen items locally)</li>
+        <li><strong>Alarms</strong> (to schedule reminders)</li>
+        <li><strong>Notifications</strong> (to show reminder notifications and quick actions)</li>
+        <li><strong>activeTab</strong> (to access the current tab only when you click the extension)</li>
+        <li><strong>scripting</strong> (to read page title/URL and optional selected text only on your request)</li>
+      </ul>
+      <p class="muted">
+        Tab Fridge does not request host permissions and does not run automatically across websites in the background.
+      </p>
 
-    <h2>6. Data retention and deletion</h2>
-    <p>
-      Data is kept on your device until you delete it.
-      You can remove individual items from the list or clear all items using the extension interface.
-      Uninstalling the extension also removes its locally stored data.
-    </p>
+      <h2>7) Your controls (deletion)</h2>
+      <p>You can:</p>
+      <ul>
+        <li>Delete individual frozen items from the extension list</li>
+        <li>Clear all saved items using the extension interface</li>
+      </ul>
+      <p>Uninstalling the extension also removes its locally stored data.</p>
 
-    <h2>7. Security</h2>
-    <p>
-      The extension stores data locally and does not transmit it over the network.
-      However, no method of storage is 100% secure; you should avoid saving sensitive information in notes or selections.
-    </p>
+      <h2>8) Security</h2>
+      <p>
+        Your data is stored locally in your browser profile. Protecting access to your device and browser profile
+        helps protect your saved tabs and notes. Avoid storing sensitive information in notes or saved selections.
+      </p>
 
-    <h2>8. Children’s privacy</h2>
-    <p>
-      Tab Fridge is not intended for children under 13 and does not knowingly collect personal information from children.
-    </p>
+      <h2>9) Changes to this policy</h2>
+      <p>
+        If the extension’s data practices change, this Privacy Policy will be updated and the “Effective date”
+        will be revised.
+      </p>
 
-    <h2>9. Changes to this policy</h2>
-    <p>
-      If this policy changes, the updated version will be published at the same URL with a new effective date.
-    </p>
+      <h2>10) Contact</h2>
+      <div class="box">
+        <p style="margin:0 0 8px;"><strong>Support email:</strong> <span class="muted">barbasystems@libero.it</span></p>
+        <p style="margin:0;"><strong>Developer/Owner:</strong> <span class="muted">BarbaSystems</span></p>
+      </div>
 
-    <h2>10. Contact</h2>
-    <p>
-      If you have questions about this policy, contact: <strong>YOUR_CONTACT_EMAIL</strong>
-    </p>
+      <p class="muted" style="margin-top:14px;">
+        Note: If you host this Privacy Policy on GitHub Pages or another website, that hosting provider may log
+        standard server data (such as visitors’ IP addresses) for security and operational purposes.
+      </p>
+    </main>
 
     <footer>
-      <p>Tab Fridge – Privacy Policy</p>
+      © <span id="y"></span> Tab Fridge
     </footer>
-  </main>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
