@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <title>Privacy Policy — Copy Clean</title>
+  <meta name="description" content="Privacy Policy for the Copy Clean Chrome Extension." />
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card: rgba(255,255,255,0.06);
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.72);
+      --border: rgba(255,255,255,0.14);
+      --link: #7aa2ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      line-height: 1.55;
+      color: var(--text);
+      background: radial-gradient(1200px 600px at 20% 0%, rgba(122,162,255,0.25), transparent 50%),
+                  radial-gradient(900px 500px at 90% 20%, rgba(56,189,248,0.18), transparent 50%),
+                  var(--bg);
+    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 48px 18px;
+    }
+    header {
+      padding: 22px 22px 18px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      letter-spacing: -0.02em;
+    }
+    .sub {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    main {
+      margin-top: 18px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 16px;
+      padding: 22px;
+      backdrop-filter: blur(10px);
+    }
+    h2 {
+      margin: 22px 0 10px;
+      font-size: 18px;
+      letter-spacing: -0.01em;
+    }
+    h2:first-child { margin-top: 0; }
+    p, li { color: var(--text); }
+    ul { margin: 8px 0 0 18px; }
+    .muted { color: var(--muted); }
+    .box {
+      margin-top: 14px;
+      padding: 14px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(0,0,0,0.22);
+    }
+    footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.95em;
+      background: rgba(255,255,255,0.08);
+      padding: 2px 6px;
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Privacy Policy — Copy Clean</h1>
+      <p class="sub">
+        Effective date:
+        <time datetime="2026-02-24">February 24, 2026</time>
+      </p>
+    </header>
+
+    <main>
+      <h2>1) Overview</h2>
+      <p>
+        “Copy Clean” is a Chrome extension that helps you copy selected text as clean, plain text.
+        It can remove extra spaces, fix broken line wraps, normalize punctuation, and optionally format the result
+        as a Markdown quote or extract a link list from the selected content.
+        This Privacy Policy explains what information the extension processes and how it is handled.
+      </p>
+
+      <h2>2) Data the extension processes</h2>
+      <p>The extension processes only what is needed to perform the copy-clean action:</p>
+      <ul>
+        <li><strong>Selected website content:</strong> the text you highlight on a web page.</li>
+        <li><strong>Selected links (optional):</strong> if you use “Link list” mode, the extension may read link titles and URLs inside your selected content.</li>
+        <li><strong>Local preferences:</strong> your chosen mode and cleaning options (saved locally).</li>
+      </ul>
+      <p class="muted">
+        Copy Clean processes this information only when you click the extension.
+      </p>
+
+      <h2>3) Where your data is stored</h2>
+      <p>
+        The extension stores only your settings <strong>locally on your device</strong> using
+        <code>chrome.storage.local</code>.
+        The extension does <strong>not</strong> store your selected text or extracted links by default.
+      </p>
+
+      <h2>4) Data sharing</h2>
+      <p>
+        Copy Clean does <strong>not</strong> sell, rent, or share your data with third parties.
+        It does <strong>not</strong> send your selected text, links, or clipboard content to any server.
+        The extension does not use analytics, advertising, or tracking services.
+      </p>
+
+      <h2>5) What the extension does not collect</h2>
+      <p>The extension is not designed to collect:</p>
+      <ul>
+        <li>Passwords or authentication credentials</li>
+        <li>Payment or financial information</li>
+        <li>Health information</li>
+        <li>Personal communications (e.g., email or chat messages)</li>
+        <li>Precise location data</li>
+      </ul>
+
+      <h2>6) Permissions used</h2>
+      <p>The extension requests certain Chrome permissions to function:</p>
+      <ul>
+        <li><strong>Storage</strong> (to save your preferences locally)</li>
+        <li><strong>activeTab</strong> (to access the active tab only when you click the extension)</li>
+        <li><strong>scripting</strong> (to read the selected text/HTML only on your request)</li>
+        <li><strong>clipboardWrite</strong> (to copy the cleaned output to your clipboard)</li>
+      </ul>
+      <p class="muted">
+        Copy Clean does not request host permissions and does not run automatically across websites in the background.
+      </p>
+
+      <h2>7) Your controls</h2>
+      <p>You can:</p>
+      <ul>
+        <li>Turn cleaning options on/off at any time</li>
+        <li>Clear the extension’s saved settings by removing extension data (Chrome → Extensions → Copy Clean → Site access / Storage) or uninstalling the extension</li>
+      </ul>
+
+      <h2>8) Security</h2>
+      <p>
+        The extension runs locally in your browser profile. Protecting access to your device and browser profile
+        helps protect your settings. Avoid copying sensitive information if you are using a shared computer.
+      </p>
+
+      <h2>9) Changes to this policy</h2>
+      <p>
+        If the extension’s data practices change, this Privacy Policy will be updated and the “Effective date”
+        will be revised.
+      </p>
+
+      <h2>10) Contact</h2>
+      <div class="box">
+        <p style="margin:0 0 8px;"><strong>Support email:</strong> <span class="muted">barbasystems@libero.it</span></p>
+        <p style="margin:0;"><strong>Developer/Owner:</strong> <span class="muted">BarbaSystems</span></p>
+      </div>
+
+      <p class="muted" style="margin-top:14px;">
+        Note: If you host this Privacy Policy on GitHub Pages or another website, that hosting provider may log
+        standard server data (such as visitors’ IP addresses) for security and operational purposes.
+      </p>
+    </main>
+
+    <footer>
+      © <span id="y"></span> Copy Clean
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
